@@ -4,13 +4,13 @@
 #include "Menus.h"
 
 void Portada() {
-     setbkcolor(LIGHTGREEN);
+     setbkcolor(WHITE);
      cleardevice();
      readimagefile("IPN.jpg",5,5,130,130);
      readimagefile("ESIME.jpg",960,5,1095,130);
     // Dibujar el título
     setcolor(RED);
-    settextstyle(4,0,4);
+    settextstyle(6,0,4);
     outtextxy(250,50,"Instituto Politecnico Nacional");
 
     // Configurar colores y fuentes para la información
