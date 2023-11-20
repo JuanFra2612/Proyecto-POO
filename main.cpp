@@ -3,11 +3,11 @@
 #include "Visual.h"
 int main( )
 {
-	initwindow( 1100 , 600 , "Convertidor de Unidades" );// Inicializar la ventana gráfica
+	initwindow( 1100 , 600 , "Convertidor de Unidades" );
   
     Portada();
 
-    // Esperar a que se presione una tecla
+
     getch();
 
     
