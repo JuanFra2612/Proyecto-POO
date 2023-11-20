@@ -1,10 +1,15 @@
 #include <graphics.h>
+#include "Menus.h"
+#include "Visual.h"
 int main( )
 {
-	initwindow( 640 , 480 , "WinBGIm" );
+	initwindow( 1100 , 600 , "Convertidor de Unidades" );// Inicializar la ventana gráfica
+  
+    Portada();
 
-    
-	closegraph( );
+    // Esperar a que se presione una tecla
+    getch();
+
     
 	return( 0 );
 }
