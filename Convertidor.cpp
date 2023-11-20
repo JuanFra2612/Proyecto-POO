@@ -1,7 +1,7 @@
-// Menus.cpp
+// Convertidor.cpp
 
 #include <graphics.h>
-#include "Menus.h"
+#include "Convertidor.h"
 
 void Portada() {
      setbkcolor(WHITE);

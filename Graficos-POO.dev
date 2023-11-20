@@ -77,18 +77,18 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit4]
-FileName=Menus.cpp
+[Unit5]
+FileName=Convertidor.cpp
 CompileCpp=1
-Folder=
+Folder=Graficos-POO
 Compile=1
 Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit5]
-FileName=Menus.h
+[Unit4]
+FileName=Convertidor.h
 CompileCpp=1
 Folder=
 Compile=1
