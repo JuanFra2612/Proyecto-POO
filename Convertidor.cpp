@@ -3,7 +3,7 @@
 #include <graphics.h>
 #include "Convertidor.h"
 
-void Portada() {
+void Convertidor::Portada() {
      setbkcolor(WHITE);
      cleardevice();
      readimagefile("IPN.jpg",5,5,130,130);
