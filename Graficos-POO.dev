@@ -1,7 +1,7 @@
 [Project]
 FileName=Graficos-POO.dev
 Name=Graficos-POO
-UnitCount=5
+UnitCount=7
 Type=1
 Ver=1
 ObjFiles=
@@ -89,6 +89,26 @@ BuildCmd=
 
 [Unit4]
 FileName=Convertidor.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=Unidades.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit7]
+FileName=Unidades.cpp
 CompileCpp=1
 Folder=
 Compile=1
