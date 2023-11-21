@@ -6,7 +6,9 @@ int main( )
 { 
 	initwindow( 1100 , 600 , "Convertidor de Unidades" );
 	Convertidor A;
+	
     A.Portada();
+    A.Menu();
  
     
     
@@ -16,5 +18,5 @@ int main( )
     getch();
 
     
-	return( 0 );
+	return 0;
 }
