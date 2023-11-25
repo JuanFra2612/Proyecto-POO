@@ -1,6 +1,7 @@
 // Convertidor.cpp
 
 #include <graphics.h>
+
 #include "Convertidor.h"
 
 void Convertidor::Portada() {
@@ -45,12 +46,12 @@ void Convertidor::Menu() {
     // Dibujar el título
     setcolor(RED); // Color de Texto
     settextstyle(6, 0, 5); // Formato de Texto
-    outtextxy(250, 50, "Convertidor de Unidades");
+    outtextxy(200, 50, "Convertidor de Unidades");
 
     // Mostrar las instrucciones
     setcolor(BLACK); // Color de Texto
     settextstyle(3, 0, 2); // Formato de Texto
-    outtextxy(50, 150, "Bienvenido al convertidor. Seleccione la categoría de conversión:");
+    outtextxy(150, 150, "Bienvenido al convertidor. Seleccione la categoría de conversión:");
 
     // Definir el color del texto de los botones
     int CT = BLACK;
@@ -61,14 +62,82 @@ void Convertidor::Menu() {
     // Botón Longitud (L)
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(250, 200, 450, 250); // Contorno del Rectángulo
-    rectangle(250, 200, 450, 250); // Rectángulo
+    bar(200, 200, 700, 250); // Contorno del Rectángulo
+    rectangle(200 ,200, 700, 250); // Rectángulo
     setcolor(CT); // Color de Texto
     setbkcolor(CYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(275, 215, "Longitud (L)");
+    outtextxy(375, 215, "Tipos de Unidad");
+    
+    
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(200, 275, 400, 425); // Contorno del Rectángulo
+    rectangle(200 ,275, 400, 425); // Rectángulo
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(500, 275, 700, 425); // Contorno del Rectángulo
+    rectangle(500 ,275, 700, 425); // Rectángulo
+    
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(200, 450, 400, 480); // Contorno del Rectángulo
+    rectangle(200 ,450, 400, 480); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(CYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(260, 455, "Unidad 1");
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(500, 450, 700, 480); // Contorno del Rectángulo
+    rectangle(500 ,450, 700, 480); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(CYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(560, 455, "Unidad 2");
+    
+    getch();
+} 
 
+ void Convertidor::menutipo(){
+      // Definir el color del texto de los botones
+    int CT = BLACK;
+
+    // Definir el tamaño del texto de los botones
+    int Tam = 3;
+
+    // Botón Longitud (L)
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(200, 200, 700, 250); // Contorno del Rectángulo
+    rectangle(200 ,200, 700, 250); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(CYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(400, 215, "Longitud (L)");
+    
     // Botón Temperatura (T)
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(200, 200, 700, 250); // Contorno del Rectángulo
+    rectangle(200 ,200, 700, 250); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(CYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(400, 215, "Longitud (L)");
+    
+}
+    
+    
+    
+    
+    
+
+  /*  // Botón Temperatura (T)
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, LIGHTRED); // Relleno del Rectángulo
     bar(250, 300, 450, 350); // Contorno del Rectángulo
@@ -137,8 +206,8 @@ void Convertidor::Menu() {
     setbkcolor(LIGHTGRAY); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
     outtextxy(655, 515, "Tiempo (I)");
+*/
+    
 
-    getch();
-}
 
 

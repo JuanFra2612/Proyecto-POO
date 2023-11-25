@@ -1,13 +1,15 @@
 #ifndef CONVERTIDOR_H
 #define CONVERTIDOR_H
 
-class Convertidor : public Unidades{
+class Convertidor /*: public Unidades*/{
 
       private:
       
       public: 
               void Portada();   
               void Menu();
+              void menutipo();
+              
                 
 };
 
