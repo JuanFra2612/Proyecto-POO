@@ -46,90 +46,178 @@ void Convertidor::Menu() {
     // Dibujar el título
     setcolor(RED); // Color de Texto
     settextstyle(6, 0, 5); // Formato de Texto
-    outtextxy(200, 50, "Convertidor de Unidades");
+    outtextxy(250, 50, "Convertidor de Unidades");
 
     // Mostrar las instrucciones
     setcolor(BLACK); // Color de Texto
     settextstyle(3, 0, 2); // Formato de Texto
-    outtextxy(150, 150, "Bienvenido al convertidor. Seleccione la categoría de conversión:");
+    outtextxy(275, 135, "Bienvenido al convertidor. Seleccione la categoría de conversión:");
 
     // Definir el color del texto de los botones
     int CT = BLACK;
 
     // Definir el tamaño del texto de los botones
     int Tam = 3;
-
-    // Botón Longitud (L)
+   
+    //boton salir
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, RED); // Relleno del Rectángulo
+    bar(950, 700, 1050, 735); // Contorno del Rectángulo
+    rectangle(950 ,700, 1050, 735); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(RED); // Fondo de Texto
+    settextstyle(3, 0, 2); // Formato de Texto
+    outtextxy(975, 705, "Salir");
+    
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(200, 200, 700, 250); // Contorno del Rectángulo
-    rectangle(200 ,200, 700, 250); // Rectángulo
+    bar(300, 200, 800, 250); // Contorno del Rectángulo
+    rectangle(300 ,200, 800, 250); // Rectángulo
     setcolor(CT); // Color de Texto
     setbkcolor(CYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(375, 215, "Tipos de Unidad");
+    outtextxy(475, 215, "Tipos de Unidad");
     
     
     
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(200, 275, 400, 425); // Contorno del Rectángulo
-    rectangle(200 ,275, 400, 425); // Rectángulo
+    bar(300, 275, 500, 425); // Contorno del Rectángulo
+    rectangle(300 ,275, 500, 425); // Rectángulo
     
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(500, 275, 700, 425); // Contorno del Rectángulo
-    rectangle(500 ,275, 700, 425); // Rectángulo
+    bar(600, 275, 800, 425); // Contorno del Rectángulo
+    rectangle(600 ,275, 800, 425); // Rectángulo
     
     
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(200, 450, 400, 480); // Contorno del Rectángulo
-    rectangle(200 ,450, 400, 480); // Rectángulo
+    bar(300, 450, 500, 480); // Contorno del Rectángulo
+    rectangle(300 ,450, 500, 480); // Rectángulo
     setcolor(CT); // Color de Texto
     setbkcolor(CYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(260, 455, "Unidad 1");
+    outtextxy(360, 455, "Unidad 1");
     
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(500, 450, 700, 480); // Contorno del Rectángulo
-    rectangle(500 ,450, 700, 480); // Rectángulo
+    bar(600, 450, 800, 480); // Contorno del Rectángulo
+    rectangle(600 ,450, 800, 480); // Rectángulo
     setcolor(CT); // Color de Texto
     setbkcolor(CYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(560, 455, "Unidad 2");
+    outtextxy(660, 455, "Unidad 2");
     
-    getch();
+    
 } 
 
  void Convertidor::menutipo(){
+ 
+     setbkcolor(WHITE);
+     cleardevice(); // Limpiar la pantalla
+     
+     // Dibujar el título
+    setcolor(RED); // Color de Texto
+    settextstyle(6, 0, 5); // Formato de Texto
+    outtextxy(250, 50, "Convertidor de Unidades");
+
+    // Mostrar las instrucciones
+    setcolor(BLACK); // Color de Texto
+    settextstyle(3, 0, 2); // Formato de Texto
+    outtextxy(275, 135, "Bienvenido al convertidor. Seleccione la categoría de conversión:");
+    
       // Definir el color del texto de los botones
     int CT = BLACK;
 
     // Definir el tamaño del texto de los botones
     int Tam = 3;
-
+    
+    
+    
     // Botón Longitud (L)
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(200, 200, 700, 250); // Contorno del Rectángulo
-    rectangle(200 ,200, 700, 250); // Rectángulo
+    bar(300, 200, 800, 250); // Contorno del Rectángulo
+    rectangle(300 ,200, 800, 250); // Rectángulo
     setcolor(CT); // Color de Texto
     setbkcolor(CYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(400, 215, "Longitud (L)");
+    outtextxy(475, 215, "Tipos de Unidad");
     
     // Botón Temperatura (T)
     setcolor(BLACK); // Color del Contorno
-    setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(200, 200, 700, 250); // Contorno del Rectángulo
-    rectangle(200 ,200, 700, 250); // Rectángulo
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 250, 800, 300); // Contorno del Rectángulo
+    rectangle(300 ,250, 800, 300); // Rectángulo
     setcolor(CT); // Color de Texto
-    setbkcolor(CYAN); // Fondo de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(400, 215, "Longitud (L)");
+    outtextxy(500, 265, "Longitud (L)");
     
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 300, 800, 350); // Contorno del Rectángulo
+    rectangle(300 ,300, 800, 350); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(500, 315, "Tiempo (T)");
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 350, 800, 400); // Contorno del Rectángulo
+    rectangle(300 ,350, 800, 400); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(500, 365, "Masa (M)");
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 400, 800, 450); // Contorno del Rectángulo
+    rectangle(300 ,400, 800, 450); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(500,415, "Volumen (V)");
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 450, 800, 500); // Contorno del Rectángulo
+    rectangle(300 ,450, 800, 500); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(500,465, "Velocidad (F)");
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 500, 800, 550); // Contorno del Rectángulo
+    rectangle(300 ,500, 800, 550); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(500,515, "Area (A)");
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 550, 800, 600); // Contorno del Rectángulo
+    rectangle(300 ,550, 800, 600); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(500,565, "Temperatura (C)");
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
+    bar(300, 600, 800, 650); // Contorno del Rectángulo
+    rectangle(300 ,600, 800, 650); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(LIGHTCYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(500,615, "Energia (E)");
+    getch();
 }
     
     

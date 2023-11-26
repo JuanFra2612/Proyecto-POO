@@ -6,9 +6,9 @@ class Convertidor /*: public Unidades*/{
       private:
       
       public: 
-              void Portada();   
-              void Menu();
-              void menutipo();
+              void Portada(void);   
+              void Menu(void);
+              void menutipo(void);
               
                 
 };
