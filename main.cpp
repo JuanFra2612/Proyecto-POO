@@ -1,14 +1,15 @@
 #include <graphics.h>
 #include <string.h>
-#include "Convertidor.h"
+
 #include "Visual.h"
 #include "Unidades.h"
+#include "Convertidor.h"
 
 int main( )
 {   int xm, ym;
     char r;
-    Convertidor A,B;
-	initwindow( 1100 , 800 , "Convertidor de Unidades" );
+    Convertidor A;
+	initwindow( 1000 , 700 , "Convertidor de Unidades" );
 	
 	
 	
@@ -37,13 +38,19 @@ int main( )
      {
      getmouseclick(WM_LBUTTONDOWN, xm, ym);
      
-     if((xm>950&&xm<1050)&&(ym>700&&ym<735)){
+     if((xm>850&&xm<950)&&(ym>620&&ym<655))
       r='s';
-      }
+    
+     if((xm>250&&xm<750)&&(ym>200&&ym<250))
+      { A.menutipo();
+        
+        if((xm>250&&xm<750)&&(ym>250&&ym<290)){
+                                               
+         }
+        
+       }
+     
       
-     if((xm>300&&xm<800)&&(ym>200&&ym<250)){
-      A.menutipo();
-      }
      
       }
       }while (r!='s');

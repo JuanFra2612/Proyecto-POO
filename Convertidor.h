@@ -1,7 +1,7 @@
 #ifndef CONVERTIDOR_H
 #define CONVERTIDOR_H
 
-class Convertidor /*: public Unidades*/{
+class Convertidor:public Unidades{
 
       private:
       
