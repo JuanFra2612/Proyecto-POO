@@ -1,9 +1,9 @@
 #include <graphics.h>
 #include <string.h>
-#include "Convertidor.h"
+
 #include "Visual.h"
 #include "Unidades.h"
-
+#include "Convertidor.h"
 
 int main( )
 {   int xm, ym;
@@ -43,11 +43,14 @@ int main( )
     
      if((xm>250&&xm<750)&&(ym>200&&ym<250))
       { A.menutipo();
-        
+        /*while(!ismouseclick(WM_LBUTTONDOWN))
+        {getmouseclick(WM_LBUTTONDOWN, xm, ym);
         if((xm>250&&xm<750)&&(ym>250&&ym<290)){
-                                               
+            A.Menu();
+            A.menuLON();   
+            }                                
          }
-        
+        */
        }
      
       

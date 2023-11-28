@@ -1,7 +1,8 @@
 // Convertidor.cpp
 
 #include <graphics.h>
-
+#include "Visual.h"
+#include "Unidades.h"
 #include "Convertidor.h"
 
 void Convertidor::Portada() {
@@ -42,7 +43,7 @@ void Convertidor::Portada() {
 
 void Convertidor::Menu() {
     cleardevice(); // Limpiar la pantalla
-
+    setbkcolor(WHITE);
     // Dibujar el título
     setcolor(RED); // Color de Texto
     settextstyle(6, 0, 5); // Formato de Texto
@@ -223,7 +224,61 @@ void Convertidor::Menu() {
 }
     
     
+/*void Convertidor::menuLON(void){
+    int xm, ym;
+     
+    // Definir el color del texto de los botones
+    int CT = BLACK;
+
+    // Definir el tamaño del texto de los botones
+    int Tam = 1;
+     
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(250, 450, 450, 480); // Contorno del Rectángulo
+    rectangle(250 ,450, 450, 480); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(CYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(310, 455, "Centimetros");
     
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(550, 450, 750, 480); // Contorno del Rectángulo
+    rectangle(550 ,450, 750, 480); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(CYAN); // Fondo de Texto
+    settextstyle(3, 0, Tam); // Formato de Texto
+    outtextxy(610, 455, "Pulgadas");
+     
+    delay(500);
+     while(!ismouseclick(WM_LBUTTONDOWN))
+     { getmouseclick(WM_LBUTTONDOWN, xm, ym);
+     
+        if((xm>250&&xm<450)&&(ym>450&&ym<480)){
+           setcolor(BLACK); // Color del Contorno
+           setfillstyle(1, CYAN); // Relleno del Rectángulo
+           bar(250, 450, 450, 480); // Contorno del Rectángulo
+           rectangle(250 ,450, 450, 480); // Rectángulo
+           setcolor(CT); // Color de Texto
+           setbkcolor(CYAN); // Fondo de Texto
+           settextstyle(3, 0, Tam); // Formato de Texto
+           outtextxy(310, 455, "Centimetros");
+           
+           setcolor(BLACK); // Color del Contorno
+           setfillstyle(1, CYAN); // Relleno del Rectángulo
+           bar(250,480 , 450, 510); // Contorno del Rectángulo
+           rectangle(250 ,480, 450, 510); // Rectángulo
+           setcolor(CT); // Color de Texto
+           setbkcolor(CYAN); // Fondo de Texto
+           settextstyle(3, 0, Tam); // Formato de Texto
+           outtextxy(310, 455, "Metros");
+          
+          }
+     }
+ }
+        
+  
     
     
 
