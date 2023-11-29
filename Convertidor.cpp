@@ -114,6 +114,7 @@ void Convertidor::Menu() {
 } 
 
  void Convertidor::menutipo(){
+      int xm, ym; Convertidor A;
  
      setbkcolor(WHITE);
      cleardevice(); // Limpiar la pantalla
@@ -220,18 +221,58 @@ void Convertidor::Menu() {
     setbkcolor(LIGHTCYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
     outtextxy(450,540, "Energia (E)");
-    getch();
+    
+    do{
+                       
+     while(!ismouseclick(WM_LBUTTONDOWN)){
+     
+         getmouseclick(WM_LBUTTONDOWN, xm, ym);
+         
+          
+             if((xm>250&&xm<750)&&(ym>250&&ym<290)){
+             
+               A.menuLON();
+                                            
+               }
+             
+             if((xm>250&&xm<750)&&(ym>200&&ym<250)){
+                
+                A.menutipo();                                        
+              }
+       
+        }//Fin del while
+    
+}while (!(xm>850&&xm<950)&&(ym>620&&ym<655));
+    //getch();
+    
 }
     
     
-/*void Convertidor::menuLON(void){
-    int xm, ym;
+void Convertidor::menuLON(void){
      
+    
+      
+    setbkcolor(WHITE);
+    cleardevice(); // Limpiar la pantalla 
+     
+    Menu();  
+     
+    int xm, ym;
+    
     // Definir el color del texto de los botones
     int CT = BLACK;
 
     // Definir el tamaño del texto de los botones
     int Tam = 1;
+    
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, CYAN); // Relleno del Rectángulo
+    bar(250, 200, 750, 250); // Contorno del Rectángulo
+    rectangle(250 ,200, 750, 250); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(CYAN); // Fondo de Texto
+    settextstyle(3, 0, 3); // Formato de Texto
+    outtextxy(425, 215, "Longitud");
      
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
@@ -251,10 +292,12 @@ void Convertidor::Menu() {
     settextstyle(3, 0, Tam); // Formato de Texto
     outtextxy(610, 455, "Pulgadas");
      
-    delay(500);
+    
      while(!ismouseclick(WM_LBUTTONDOWN))
-     { getmouseclick(WM_LBUTTONDOWN, xm, ym);
-     
+     { clearmouseclick(WM_LBUTTONDOWN);
+        delay(20);
+            getmouseclick(WM_LBUTTONDOWN, xm, ym);
+       
         if((xm>250&&xm<450)&&(ym>450&&ym<480)){
            setcolor(BLACK); // Color del Contorno
            setfillstyle(1, CYAN); // Relleno del Rectángulo
@@ -275,6 +318,7 @@ void Convertidor::Menu() {
            outtextxy(310, 455, "Metros");
           
           }
+          getch();
      }
  }
         

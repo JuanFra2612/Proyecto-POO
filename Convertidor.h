@@ -9,7 +9,7 @@ class Convertidor : public Unidades{
               void Portada(void);   
               void Menu(void);
               void menutipo(void);
-              //void menuLON(void);
+              void menuLON(void);
                 
 };
 
