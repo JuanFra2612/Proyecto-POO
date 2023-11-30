@@ -1,11 +1,14 @@
+
 #ifndef UNIDADES_H
 #define UNIDADES_H
 
-class Unidades{
+class Unidades
+{
       
       private: 
                      
-      public:
+      public:int xm,ym;
+             void plantillamenu(void);
              void Longitud(void);
              void Temperatura(void);
              void Peso(void);
@@ -14,6 +17,7 @@ class Unidades{
              void Area(void);
              void Velocidad(void);
              void energia(void);
+             void menutipo2(void);
 
 };
 

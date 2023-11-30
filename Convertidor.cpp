@@ -4,6 +4,8 @@
 #include "Visual.h"
 #include "Unidades.h"
 #include "Convertidor.h"
+#define ESC  27
+
 
 void Convertidor::Portada() {
      
@@ -42,6 +44,7 @@ void Convertidor::Portada() {
 }
 
 void Convertidor::Menu() {
+     char r;
     cleardevice(); // Limpiar la pantalla
     setbkcolor(WHITE);
     // Dibujar el título
@@ -110,12 +113,28 @@ void Convertidor::Menu() {
     settextstyle(3, 0, Tam); // Formato de Texto
     outtextxy(610, 455, "Unidad 2");
     
+    do{
+               
+     
+     
+     delay(500);
+     if(ismouseclick(WM_LBUTTONDOWN))
+     {
+     getmouseclick(WM_LBUTTONDOWN, xm, ym);
+     
+     if((xm>850&&xm<950)&&(ym>620&&ym<655))
+      r='s';
     
+     if((xm>250&&xm<750)&&(ym>200&&ym<250))
+       menutipo();
+       
+     
+      }
+      }while (r!='s');
 } 
 
- void Convertidor::menutipo(){
-      int xm, ym; Convertidor A;
- 
+ void Convertidor::menutipo(void){
+      int xm, ym,f;
      setbkcolor(WHITE);
      cleardevice(); // Limpiar la pantalla
      
@@ -222,105 +241,44 @@ void Convertidor::Menu() {
     settextstyle(3, 0, Tam); // Formato de Texto
     outtextxy(450,540, "Energia (E)");
     
-    do{
-                       
-     while(!ismouseclick(WM_LBUTTONDOWN)){
-     
-         getmouseclick(WM_LBUTTONDOWN, xm, ym);
-         
-          
-             if((xm>250&&xm<750)&&(ym>250&&ym<290)){
-             
-               A.menuLON();
-                                            
-               }
-             
-             if((xm>250&&xm<750)&&(ym>200&&ym<250)){
-                
-                A.menutipo();                                        
-              }
-       
-        }//Fin del while
+    setcolor(BLACK); // Color del Contorno
+    setfillstyle(1, RED); // Relleno del Rectángulo
+    bar(850, 620, 950, 655); // Contorno del Rectángulo
+    rectangle(850 ,620, 950, 655); // Rectángulo
+    setcolor(CT); // Color de Texto
+    setbkcolor(RED); // Fondo de Texto
+    settextstyle(3, 0, 2); // Formato de Texto
+    outtextxy(855, 625, "Regresar");
     
-}while (!(xm>850&&xm<950)&&(ym>620&&ym<655));
-    //getch();
+    //do{
     
-}
+    while(!ismouseclick(WM_LBUTTONDOWN))
+      { clearmouseclick(WM_LBUTTONDOWN);
+        delay(20);
+            getmouseclick(WM_LBUTTONDOWN, xm, ym);
+     if((xm>250&&xm<750)&&(ym>250&&ym<290))
+        Longitud();
+     if((xm>850&&xm<950)&&(ym>620&&ym<655)){
+      setbkcolor(WHITE);
+      cleardevice;
+      Menu();   
+       }
+     }
+     //}while(f!=ESC);     
+    getch();
+      }
+ 
+ 
+  
     
-    
-void Convertidor::menuLON(void){
+/*void Convertidor::menuLON(void){
      
     
       
-    setbkcolor(WHITE);
-    cleardevice(); // Limpiar la pantalla 
-     
-    Menu();  
-     
-    int xm, ym;
     
-    // Definir el color del texto de los botones
-    int CT = BLACK;
-
-    // Definir el tamaño del texto de los botones
-    int Tam = 1;
-    
-    setcolor(BLACK); // Color del Contorno
-    setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(250, 200, 750, 250); // Contorno del Rectángulo
-    rectangle(250 ,200, 750, 250); // Rectángulo
-    setcolor(CT); // Color de Texto
-    setbkcolor(CYAN); // Fondo de Texto
-    settextstyle(3, 0, 3); // Formato de Texto
-    outtextxy(425, 215, "Longitud");
-     
-    setcolor(BLACK); // Color del Contorno
-    setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(250, 450, 450, 480); // Contorno del Rectángulo
-    rectangle(250 ,450, 450, 480); // Rectángulo
-    setcolor(CT); // Color de Texto
-    setbkcolor(CYAN); // Fondo de Texto
-    settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(310, 455, "Centimetros");
-    
-    setcolor(BLACK); // Color del Contorno
-    setfillstyle(1, CYAN); // Relleno del Rectángulo
-    bar(550, 450, 750, 480); // Contorno del Rectángulo
-    rectangle(550 ,450, 750, 480); // Rectángulo
-    setcolor(CT); // Color de Texto
-    setbkcolor(CYAN); // Fondo de Texto
-    settextstyle(3, 0, Tam); // Formato de Texto
-    outtextxy(610, 455, "Pulgadas");
-     
-    
-     while(!ismouseclick(WM_LBUTTONDOWN))
-     { clearmouseclick(WM_LBUTTONDOWN);
-        delay(20);
-            getmouseclick(WM_LBUTTONDOWN, xm, ym);
-       
-        if((xm>250&&xm<450)&&(ym>450&&ym<480)){
-           setcolor(BLACK); // Color del Contorno
-           setfillstyle(1, CYAN); // Relleno del Rectángulo
-           bar(250, 450, 450, 480); // Contorno del Rectángulo
-           rectangle(250 ,450, 450, 480); // Rectángulo
-           setcolor(CT); // Color de Texto
-           setbkcolor(CYAN); // Fondo de Texto
-           settextstyle(3, 0, Tam); // Formato de Texto
-           outtextxy(310, 455, "Centimetros");
-           
-           setcolor(BLACK); // Color del Contorno
-           setfillstyle(1, CYAN); // Relleno del Rectángulo
-           bar(250,480 , 450, 510); // Contorno del Rectángulo
-           rectangle(250 ,480, 450, 510); // Rectángulo
-           setcolor(CT); // Color de Texto
-           setbkcolor(CYAN); // Fondo de Texto
-           settextstyle(3, 0, Tam); // Formato de Texto
-           outtextxy(310, 455, "Metros");
-          
-          }
           getch();
      }
- }
+ } */
         
   
     
