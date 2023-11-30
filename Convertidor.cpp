@@ -258,6 +258,28 @@ void Convertidor::Menu() {
             getmouseclick(WM_LBUTTONDOWN, xm, ym);
      if((xm>250&&xm<750)&&(ym>250&&ym<290))
         Longitud();
+      
+     if((xm>250&&xm<750)&&(ym>290&&ym<330))
+        Tiempo();
+     
+     if((xm>250&&xm<750)&&(ym>330&&ym<370))
+        Peso(); 
+     
+     if((xm>250&&xm<750)&&(ym>370&&ym<410))
+        Volumen();
+        
+     if((xm>250&&xm<750)&&(ym>410&&ym<450))
+        Velocidad();
+        
+     if((xm>250&&xm<750)&&(ym>450&&ym<490))
+        Area();
+        
+     if((xm>250&&xm<750)&&(ym>490&&ym<530))
+        Temperatura();
+     
+     if((xm>250&&xm<750)&&(ym>530&&ym<560))
+        energia();
+           
      if((xm>850&&xm<950)&&(ym>620&&ym<655)){
       setbkcolor(WHITE);
       cleardevice;
