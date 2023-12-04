@@ -7,7 +7,7 @@ class Unidades
       
       private: 
                      
-      public:int xm,ym;
+      public:/*int xm,ym;
              void plantillamenu(void);
              void Longitud(void);
              void Temperatura(void);
@@ -16,7 +16,7 @@ class Unidades
              void Tiempo(void);
              void Area(void);
              void Velocidad(void);
-             void energia(void);
+             void energia(void);*/
              void menutipo2(void);
 
 };

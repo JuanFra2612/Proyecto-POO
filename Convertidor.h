@@ -5,10 +5,19 @@ class Convertidor : public Unidades{
 
       private: 
       
-      public: 
+      public: int xm,ym;
               void Portada(void);   
               void Menu(void);
               void menutipo(void);
+              void plantillamenu(void);
+             void Longitud(void);
+             void Temperatura(void);
+             void Peso(void);
+             void Volumen(void);
+             void Tiempo(void);
+             void Area(void);
+             void Velocidad(void);
+             void energia(void);
               
               //void menuLON(void);
                 
