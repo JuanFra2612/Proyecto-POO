@@ -44,7 +44,7 @@ void Convertidor::Portada() {
 }
 
 void Convertidor::Menu() {
-     char r;
+     char r; Unidades C;
     cleardevice(); // Limpiar la pantalla
     setbkcolor(WHITE);
     // Dibujar el título
@@ -89,6 +89,7 @@ void Convertidor::Menu() {
     bar(250, 275, 450, 425); // Contorno del Rectángulo
     rectangle(250 ,275, 450, 425); // Rectángulo
     
+    
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, CYAN); // Relleno del Rectángulo
     bar(550, 275, 750, 425); // Contorno del Rectángulo
@@ -112,7 +113,8 @@ void Convertidor::Menu() {
     setbkcolor(CYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
     outtextxy(610, 455, "Unidad 2");
-    
+    C.PideDato();
+    C.MuestraDato();
     do{
                
      

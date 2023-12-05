@@ -23,7 +23,7 @@ int i=0;
 
   strcpy(captura," ");
   setcolor(cTexto);//color texto de la barra
-  settextstyle(6,0,2);
+  settextstyle(3,0,3);
   setfillstyle(1,cBarra);//color de la barra
   setbkcolor(cBarra);
   bar(x-10,y-20,x+tx,y+20);
@@ -68,7 +68,7 @@ int i=0;
   strcpy(captura," ");
   strcpy(Aster," ");
   setcolor(cTexto);//color texto de la barra
-  settextstyle(6,0,2);
+  settextstyle(3,0,3);
   setfillstyle(1,cBarra);//color de la barra
   setbkcolor(cBarra);
   bar(x-10,y-20,x+tx,y+20);

@@ -5,7 +5,7 @@
 
 void Unidades::PideDato(){
      
-    CajaTexto(10,50,290,BLUE,YELLOW);
+    CajaTexto(260,350,190,CYAN,BLACK);
     r=atof(captura);
 
 }
@@ -21,7 +21,7 @@ void Unidades::MuestraDato(){
            bar(x,y,x+200,y+150); // Contorno del Rectángulo
            rectangle(x,y,x+200,y+150); // Rectángulo
            sprintf(cadAux,"%.2f",r);
-           Etiqueta(x,y,BLUE,YELLOW,3,3,cadAux);
+           Etiqueta(x+20,y+75,CYAN,YELLOW,3,3,cadAux);
            getch();
      
 }
