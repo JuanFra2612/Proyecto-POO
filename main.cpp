@@ -5,25 +5,20 @@
 #include "Unidades.h"
 #include "Convertidor.h"
 
-int main( )
+int main()
 {   int xm, ym;
     char r;
     Convertidor A;
 	initwindow( 1000 , 700 , "Convertidor de Unidades" );
-	
-	
-	
+		
     A.Portada();
-     //A.Menu();
-    
+
     setbkcolor(WHITE);
-     cleardevice();          
+    cleardevice();
+              
      A.Menu(); 
      
-    
-
-
-    
+     
    closegraph();
     
 	return 0;

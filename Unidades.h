@@ -1,23 +1,27 @@
+//Unidades.h
+#ifndef _UNIDADES_H
+#define _UNIDADES_H
 
-#ifndef UNIDADES_H
-#define UNIDADES_H
+class Unidades: public Visual{
 
-class Unidades
-{
       
       private: 
-                     
-      public:/*int xm,ym;
-             void plantillamenu(void);
-             void Longitud(void);
-             void Temperatura(void);
-             void Peso(void);
-             void Volumen(void);
-             void Tiempo(void);
-             void Area(void);
-             void Velocidad(void);
-             void energia(void);*/
-             void menutipo2(void);
+             float r;        
+      public:
+             
+             int xm,ym;
+             void PideDato();
+             void MuestraDato();
+             void plantillamenu();
+             void Longitud();
+             void Temperatura();
+             void Peso();
+             void Volumen();
+             void Tiempo();
+             void Area();
+             void Velocidad();
+             void energia();
+             void menutipo2();
 
 };
 

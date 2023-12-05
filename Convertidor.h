@@ -1,26 +1,26 @@
-#ifndef CONVERTIDOR_H
-#define CONVERTIDOR_H
+#ifndef _CONVERTIDOR_H
+#define _CONVERTIDOR_H
 
 class Convertidor : public Unidades{
 
       private: 
       
+      float r;
+      
       public: int xm,ym;
-              void Portada(void);   
-              void Menu(void);
-              void menutipo(void);
-              void plantillamenu(void);
-             void Longitud(void);
-             void Temperatura(void);
-             void Peso(void);
-             void Volumen(void);
-             void Tiempo(void);
-             void Area(void);
-             void Velocidad(void);
-             void energia(void);
-              
-              //void menuLON(void);
-                
+              void Portada();   
+              void Menu();
+              void menutipo();
+              void plantillamenu();
+             void Longitud();
+             void Temperatura();
+             void Peso();
+             void Volumen();
+             void Tiempo();
+             void Area();
+             void Velocidad();
+             void energia();
+               
 };
 
 

@@ -135,7 +135,7 @@ void Convertidor::Menu() {
       }while (r!='s');
 } 
 
- void Convertidor::menutipo(void){
+ void Convertidor::menutipo(){
       int f;
      setbkcolor(WHITE);
      cleardevice(); // Limpiar la pantalla
@@ -252,7 +252,7 @@ void Convertidor::Menu() {
     settextstyle(3, 0, 2); // Formato de Texto
     outtextxy(855, 625, "Salir");
     
-    //do{
+  
     
     while(!ismouseclick(WM_LBUTTONDOWN))
       { clearmouseclick(WM_LBUTTONDOWN);
@@ -290,11 +290,11 @@ void Convertidor::Menu() {
       Menu(); }  
        
      }
-     //}while(f!=ESC);     
+     
     getch();
       }
  
-void Convertidor::plantillamenu(void){
+void Convertidor::plantillamenu(){
      cleardevice(); // Limpiar la pantalla
     setbkcolor(WHITE);
     // Dibujar el título
@@ -366,7 +366,7 @@ void Convertidor::plantillamenu(void){
 }  
 
 void Convertidor::Longitud(void){
-     
+
 setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -515,7 +515,7 @@ setbkcolor(WHITE);
          }
 }
 
-void Convertidor::Temperatura(void){
+void Convertidor::Temperatura(){
      setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -604,7 +604,7 @@ void Convertidor::Temperatura(void){
            
 }
 
-void Convertidor::Peso(void){
+void Convertidor::Peso(){
     setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -727,7 +727,7 @@ void Convertidor::Peso(void){
 
 }
 
-void Convertidor::Volumen(void){
+void Convertidor::Volumen(){
     setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -866,7 +866,7 @@ void Convertidor::Volumen(void){
         }
 }
 
-void Convertidor::Tiempo(void){
+void Convertidor::Tiempo(){
    setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -968,7 +968,7 @@ void Convertidor::Tiempo(void){
         }
 }
 
-void Convertidor::Area(void){
+void Convertidor::Area(){
  setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -1072,7 +1072,7 @@ void Convertidor::Area(void){
         }
 }
 
-void Convertidor::Velocidad(void){
+void Convertidor::Velocidad(){
      setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -1158,7 +1158,7 @@ void Convertidor::Velocidad(void){
         }
 }
 
-void Convertidor::energia(void){
+void Convertidor::energia(){
      setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -1237,15 +1237,11 @@ void Convertidor::energia(void){
            outtextxy(610, 515, "Kilovatios-hora");
            
            }
+           
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
             
            if((xm>850&&xm<950)&&(ym>620&&ym<655))
             exit(1);
         }
-     
-
-
 } 
-  
-    
