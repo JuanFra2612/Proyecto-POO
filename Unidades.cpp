@@ -22,10 +22,6 @@ void Unidades::MuestraDato(){
            rectangle(x,y,x+200,y+150); // Rectángulo
            sprintf(cadAux,"%.2f",r);
            Etiqueta(x+20,y+75,CYAN,YELLOW,3,3,cadAux);
-           getch();
-     
-}
-
-void Unidades::menutipo2(void){
+           //getch();
      
 }

@@ -44,7 +44,7 @@ void Convertidor::Portada() {
 }
 
 void Convertidor::Menu() {
-     char r; Unidades C;
+     char r; 
     cleardevice(); // Limpiar la pantalla
     setbkcolor(WHITE);
     // Dibujar el título
@@ -113,8 +113,8 @@ void Convertidor::Menu() {
     setbkcolor(CYAN); // Fondo de Texto
     settextstyle(3, 0, Tam); // Formato de Texto
     outtextxy(610, 455, "Unidad 2");
-    C.PideDato();
-    C.MuestraDato();
+    
+    
     do{
                
      
@@ -170,7 +170,7 @@ void Convertidor::Menu() {
     settextstyle(3, 0, 3); // Formato de Texto
     outtextxy(425, 215, "Tipos de Unidad");
     
-    // Botón Temperatura (T)
+    
     setcolor(BLACK); // Color del Contorno
     setfillstyle(1, LIGHTCYAN); // Relleno del Rectángulo
     bar(250, 250, 750, 290); // Contorno del Rectángulo
@@ -368,8 +368,11 @@ void Convertidor::plantillamenu(){
 }  
 
 void Convertidor::Longitud(void){
+     
+Unidades C;
 
 setbkcolor(WHITE);
+
     cleardevice(); // Limpiar la pantalla 
      
     plantillamenu(); 
@@ -387,7 +390,7 @@ setbkcolor(WHITE);
     
 
     outtextxy(610, 455, "Pulgadas");
-     
+  
     
      while(!ismouseclick(WM_LBUTTONDOWN))
      { clearmouseclick(WM_LBUTTONDOWN);
@@ -395,6 +398,7 @@ setbkcolor(WHITE);
             getmouseclick(WM_LBUTTONDOWN, xm, ym);
        
         if((xm>250&&xm<450)&&(ym>450&&ym<480)){
+                                               
            setcolor(BLACK); // Color del Contorno
            setfillstyle(1, CYAN); // Relleno del Rectángulo
            bar(250, 450, 450, 480); // Contorno del Rectángulo
@@ -505,9 +509,15 @@ setbkcolor(WHITE);
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(610, 605, "Kilometros");
            
-           
-           
            }  
+           
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            
+            }
+            
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
                                                
@@ -518,6 +528,9 @@ setbkcolor(WHITE);
 }
 
 void Convertidor::Temperatura(){
+
+Unidades C;
+
      setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -529,14 +542,14 @@ void Convertidor::Temperatura(){
     outtextxy(465, 215, "Temperatura");
     outtextxy(310, 455, "Celsius");
     outtextxy(610, 455, "Fahrenheit");
-     
-    
+           
      while(!ismouseclick(WM_LBUTTONDOWN))
      { clearmouseclick(WM_LBUTTONDOWN);
         delay(20);
             getmouseclick(WM_LBUTTONDOWN, xm, ym);
        
         if((xm>250&&xm<450)&&(ym>450&&ym<480)){
+                                               
            setcolor(BLACK); // Color del Contorno
            setfillstyle(1, CYAN); // Relleno del Rectángulo
            bar(250, 450, 450, 480); // Contorno del Rectángulo
@@ -564,6 +577,8 @@ void Convertidor::Temperatura(){
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(310, 515, "Kelvin");
            
+          
+    
         
             } 
             
@@ -596,6 +611,13 @@ void Convertidor::Temperatura(){
            outtextxy(610, 515, "Kelvin");
            
            }
+           
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            
+            }
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
            
@@ -607,6 +629,9 @@ void Convertidor::Temperatura(){
 }
 
 void Convertidor::Peso(){
+     
+Unidades C;
+
     setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -618,7 +643,6 @@ void Convertidor::Peso(){
     outtextxy(465, 215, "Masa");
     outtextxy(310, 455, "Kilogramos");
     outtextxy(610, 455, "Libras");
-     
     
      while(!ismouseclick(WM_LBUTTONDOWN))
      { clearmouseclick(WM_LBUTTONDOWN);
@@ -719,6 +743,12 @@ void Convertidor::Peso(){
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(610, 575, "Toneladas");
            }
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            
+            }
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
            
@@ -730,9 +760,10 @@ void Convertidor::Peso(){
 }
 
 void Convertidor::Volumen(){
+     Unidades C;
     setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
-     
+     //
     plantillamenu(); 
      
     int CT = BLACK;
@@ -741,7 +772,6 @@ void Convertidor::Volumen(){
     outtextxy(465, 215, "Volumen");
     outtextxy(310, 455, "Litros");
     outtextxy(610, 455, "Galones");
-     
     
      while(!ismouseclick(WM_LBUTTONDOWN))
      { clearmouseclick(WM_LBUTTONDOWN);
@@ -860,6 +890,12 @@ void Convertidor::Volumen(){
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(580, 605, "Centrimetros cubicos");
            }
+           
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            }
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
            
@@ -869,6 +905,9 @@ void Convertidor::Volumen(){
 }
 
 void Convertidor::Tiempo(){
+     
+   Unidades C;
+   
    setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -962,6 +1001,14 @@ void Convertidor::Tiempo(){
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(610, 545, "Dias");  
            }
+           
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            
+            }
+            
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
            
@@ -971,6 +1018,7 @@ void Convertidor::Tiempo(){
 }
 
 void Convertidor::Area(){
+     Unidades C;
  setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -982,7 +1030,6 @@ void Convertidor::Area(){
     outtextxy(465, 215, "Area");
     outtextxy(270, 455, "Metros Cuadrados");
     outtextxy(580, 455, "Pies Cuadrados");
-     
     
      while(!ismouseclick(WM_LBUTTONDOWN))
      { clearmouseclick(WM_LBUTTONDOWN);
@@ -1066,6 +1113,14 @@ void Convertidor::Area(){
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(570, 545, "Kilómetros cuadrados");
            }
+           
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            
+            }
+           
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
            
@@ -1075,6 +1130,8 @@ void Convertidor::Area(){
 }
 
 void Convertidor::Velocidad(){
+     Unidades C;
+     
      setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -1152,6 +1209,14 @@ void Convertidor::Velocidad(){
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(570, 515, "Millas por hora");
            }
+           
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            
+            }
+            
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
             menutipo();
            
@@ -1161,6 +1226,9 @@ void Convertidor::Velocidad(){
 }
 
 void Convertidor::energia(){
+
+Unidades C;
+
      setbkcolor(WHITE);
     cleardevice(); // Limpiar la pantalla 
      
@@ -1180,6 +1248,7 @@ void Convertidor::energia(){
             getmouseclick(WM_LBUTTONDOWN, xm, ym);
        
         if((xm>250&&xm<450)&&(ym>450&&ym<480)){
+                                               
            setcolor(BLACK); // Color del Contorno
            setfillstyle(1, CYAN); // Relleno del Rectángulo
            bar(250, 450, 450, 480); // Contorno del Rectángulo
@@ -1206,7 +1275,6 @@ void Convertidor::energia(){
            setbkcolor(CYAN); // Fondo de Texto
            settextstyle(3, 0, Tam); // Formato de Texto
            outtextxy(310, 515, "Kilovatios-hora");
-           
            
             } 
             
@@ -1240,10 +1308,20 @@ void Convertidor::energia(){
            
            }
            
+           if((xm>250&&xm<450)&&(ym>275&&ym<425)){ 
+            
+            C.PideDato();
+            C.MuestraDato();
+            
+            }
+           
            if((xm>250&&xm<750)&&(ym>200&&ym<250))
+            
             menutipo();
             
            if((xm>850&&xm<950)&&(ym>620&&ym<655))
+            
             exit(1);
+            
         }
 } 
