@@ -6,12 +6,12 @@ CursorRow=12
 CursorCol=34
 CursorRow=4
 >>>>>>> 91de7c784f5b9d069c83710e6709a682fa2a7e9f
-TopLine=3
+TopLine=1
 LeftChar=1
 Open=1
 Top=0
 [Editors]
-Focused=4
+Focused=6
 Order=0,4,3,5,6
 [Editor_0]
 Open=1
@@ -36,11 +36,11 @@ TopLine=1
 LeftChar=1
 [Editor_4]
 Open=1
-Top=1
+Top=0
 <<<<<<< HEAD
 CursorCol=63
 CursorRow=469
-TopLine=461
+TopLine=1305
 =======
 CursorCol=20
 CursorRow=8
@@ -51,11 +51,11 @@ Open=1
 Top=0
 CursorCol=1
 CursorRow=6
-TopLine=6
+TopLine=1
 LeftChar=1
 [Editor_6]
 Open=1
-Top=0
+Top=1
 CursorCol=32
 CursorRow=15
 TopLine=5
